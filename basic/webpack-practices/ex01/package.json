@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "express": "^4.17.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
