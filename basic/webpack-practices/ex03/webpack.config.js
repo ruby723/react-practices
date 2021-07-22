@@ -8,7 +8,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        contentsBase: path.resolve('public'),
+        contentBase: path.resolve('public'),
         host: "0.0.0.0",
         port: 6060,
         inline: true,
