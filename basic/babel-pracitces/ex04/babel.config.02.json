@@ -1,0 +1,15 @@
+{
+    "presets":[
+        ["@babel/preset-env", {
+            "tartets":{
+                "node": "current"
+            }
+        }]
+    ],
+    "plugins": [
+        "@bable/plugin-transform-block-scoping",
+        "@bable/plugin-transform-parameters",
+        "@bable/plugin-transform-template-listerals",
+        "@bable/plugin-transform-block-for-of"
+    ]
+}
