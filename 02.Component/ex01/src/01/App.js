@@ -4,9 +4,7 @@ import FoodList from './FoodList';
 export default class extends Component {
     render(){
         return (
-            <div id='App'>
-                <FoodList />
-            </div>
+            <h1>Guest Book</h1>
         )
     }
 }
