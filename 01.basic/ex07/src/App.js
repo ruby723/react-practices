@@ -1,19 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-import styles from './App.css';
 
-function App() {
-  return (
-<div className={styles.App}>
-      <header className={styles['App-header']}>
-        <img src={logo} className={styles['App-logo']} alt="logo" />
-        <p>
-          React 1Week 과제 입니다.
-        </p>
-        <h1>Hello World</h1>
-      </header>
-    </div>
-  );
+
+import './App.scss';
+import logo from './logo.svg';
+
+const App = function(){
+    const app = document.createElement('div');
+    app.className = 'App';
+    app.innerHTML = 
+    `<header class="App-header">
+       <img src="${logo}" class="App-logo" alt="logo" />
+       <p>Hello World</p>
+    </header>`;
+    return app;
 }
 
-export default App;
+export { App };

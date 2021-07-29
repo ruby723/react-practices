@@ -13,6 +13,7 @@ module.exports = {
             use:['style-loader', 'css-loader']
         }]
     },
+    devtool: "eval-source-map",
     devServer: {
         contentBase: path.resolve('public'),
         host: "0.0.0.0",
