@@ -1,13 +1,19 @@
-import React, { Fragment } from 'react';
-import GuestList from './GuestList';
-import guests from './data.json';
-import styles from './asstes/css/GuestBook.css';
+import React from 'react';
+import WriteForm from './WriteForm';
+import MessageList from './MessageList';
+import styles from './assets/scss/GuestBook.scss';
 
-export default function GuestBook(){
+import messages from './assets/json/messages.json';
 
-    return(
-        <div className={styles.Guestbook}>
-            <GuestList key={guests.no} guests={guests} />
+export default function Guestbook() {
+
+
+
+    return (
+        <div className={ styles.Guestbook }>
+            <h1>방명록</h1>
+            <WriteForm />
+            <MessageList messages={ messages }/>
         </div>
     );
 }
