@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../assets/css/Task.css';
 
 export default function Task({ name }) {
@@ -9,4 +10,8 @@ export default function Task({ name }) {
             <a href='#' className={styles['TaskList__Task--remove']}></a>
         </li>
     );
+}
+
+Task.PropTypes = {
+    name : PropTypes.string.isRequired
 }

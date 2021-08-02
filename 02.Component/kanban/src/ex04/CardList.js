@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import PropTypes from 'prop-types';
 import styles from '../assets/css/CardList.css';
 
 export default function CardList({ title, cards }) {
@@ -14,4 +15,9 @@ export default function CardList({ title, cards }) {
                                     tasks={ card.tasks } />) }
         </div>
     );
+}
+
+CardList.propTypes = {
+    title: PropTypes.string.isRequired,
+    cards: PropTypes.arrayOf(PropTypes.object).isRequired
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Message from './Message';
+import PropTypes from 'prop-types';
 import styles from './assets/scss/MessageList.scss';
 
 export default function MessageList({ messages }) {
@@ -11,4 +12,8 @@ export default function MessageList({ messages }) {
                                                 message={message.message}/>) }
         </ul>
     );
+}
+
+MessageList.PropTypes = {
+    message:PropTypes.string.isRequired
 }

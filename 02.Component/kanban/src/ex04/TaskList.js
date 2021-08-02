@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task';
+import PropTypes from 'prop-types';
 import styles from '../assets/css/TaskList.css';
 
 export default function TaskList({ tasks }) {
@@ -12,4 +13,8 @@ export default function TaskList({ tasks }) {
             </ul>
         </div>    
     );
+}
+
+TaskList.PropTypes = {
+    tasks: PropTypes.arrayOf(PropTypes.object).isRequired
 }

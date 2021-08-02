@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import TaskList from './TaskList';
+import PropTypes from 'prop-types';
 import styles from '../assets/scss/Card.scss';
 
 export default function Card({ title, description, status, tasks }) {
@@ -29,4 +30,11 @@ export default function Card({ title, description, status, tasks }) {
           </div> : null }
       </div>
     );
+}
+
+Card.PropTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  tasks: PropTypes.arrayOf(PropTypes.object).isRequired
 }
